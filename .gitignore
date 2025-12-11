@@ -1,0 +1,25 @@
+Python cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+*.swp
+*.tmp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+Data
+data/warm/
+data/neutral/
+data/cool/
+
+# logs or temp directories
+logs/
+output/
