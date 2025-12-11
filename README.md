@@ -42,7 +42,6 @@ Upload the notebook, add your dataset to Drive, update the paths, and run all ce
 **Local Execution**
 
 _Clone the repository:_
-git clone https://github.com/<your-username>/skin-undertone-classifier.git
 
 Install dependencies:
 pip install numpy pandas opencv-python scikit-learn matplotlib
