@@ -3,13 +3,13 @@
 This repository contains the implementation for a machine learning system that classifies facial skin undertones (warm, neutral, cool) using interpretable color-science features. The project was developed for CS 5805: Machine Learning at Virginia Tech.
 
 **Overview**
-The objective of this project is to predict skin undertones from face images using a lightweight feature extraction pipeline and classical machine learning models. The approach emphasizes interpretability and reproducibility rather than large-scale deep learning methods.
+The objective of this project is to predict skin undertones from face images using a lightweight feature extraction pipeline and classical machine learning models. 
 
 **Method**
 
 Feature Extraction
 
-Each image is processed to produce a 10-dimensional feature vector consisting of:
+Each image is processed to produce a 10-Dimensional feature vector consisting of:
 - Individual Typology Angle (ITA) from the CIELab color space
 - Mean RGB values
 - Mean HSV values
@@ -20,7 +20,7 @@ Each image is processed to produce a 10-dimensional feature vector consisting of
 Three models were tested:
 - Logistic Regression
 - Decision Tree
-- Random Forest (final model)
+- Random Forest (which is the chosen final model)
 - GridSearchCV was used for hyperparameter tuning.
 
 **Performance**
