@@ -1,4 +1,4 @@
-**Skin Undertone Classifier**
+**CS 5805 Final Project - Skin Undertone Classifier**
 
 This repository contains the implementation for a machine learning system that classifies facial skin undertones (warm, neutral, cool) using interpretable color-science features. The project was developed for CS 5805: Machine Learning at Virginia Tech.
 
