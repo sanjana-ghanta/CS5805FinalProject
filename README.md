@@ -1,20 +1,54 @@
-Homework 1 - Sentiment Classification
+**CS 5805 Final Project - Skin Undertone Classifier**
 
-Name: Sanjana Ghanta
-PID: gsanjana
+This repository contains the implementation for a machine learning system that classifies facial skin undertones (warm, neutral, cool) using interpretable color-science features. The project was developed for CS 5805: Machine Learning at Virginia Tech.
 
-Instructions to run:
+**Overview**
+The objective of this project is to predict skin undertones from face images using a lightweight feature extraction pipeline and classical machine learning models. 
 
-1. Open the notebook hw1.ipynb in Google Colab
-2. Upload the dataset file "IMDB Dataset.csv"
-3. Run all cells in order
-4. The model will train and evaluate automatically
-5. The best model will be saved in the "best_model" directory
+**Method**
 
-Requirements:
-- Python 3
-- PyTorch
-- transformers
-- datasets
-- scikit-learn
-- pandas
+Feature Extraction
+
+Each image is processed to produce a 10-Dimensional feature vector consisting of:
+- Individual Typology Angle (ITA) from the CIELab color space
+- Mean RGB values
+- Mean HSV values
+- Mean YCbCr chroma values
+
+**Models**
+
+Three models were tested:
+- Logistic Regression
+- Decision Tree
+- Random Forest (which is the chosen final model)
+- GridSearchCV was used for hyperparameter tuning.
+
+**Performance**
+
+Final test results:
+_Accuracy_: 87.2%
+_Macro F1 Score_: 0.8587
+
+**Repository Information**
+
+_Note:_ The repository does not include face images for privacy reasons.
+Users must supply their own dataset following the directory structure.
+
+**Usage**
+
+Google Colab
+Upload the notebook, add your dataset to Drive, update the paths, and run all cells.
+
+**Local Execution**
+
+_Clone the repository:_
+
+Install dependencies:
+pip install numpy pandas opencv-python scikit-learn matplotlib
+
+
+Run the notebook:
+jupyter notebook notebooks/skin_undertone_classifier.ipynb
+
+**License**
+This project is released under the MIT License.
